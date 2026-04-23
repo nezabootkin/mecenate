@@ -105,7 +105,7 @@ export default function HomeScreen() {
         <ThemedView style={styles.emptyPosts}>
           <Image source={require('@/assets/images/illustration_sticker.png')}/>
           <ThemedText style={styles.errorText}>{UPDATE_ERROR_MESSAGE}</ThemedText>
-          <TouchableOpacity style={styles.reload}>
+          <TouchableOpacity style={styles.reload} onPress={onRefresh}>
             <ThemedText style={styles.reloadButton}>{UPDATE}</ThemedText>
           </TouchableOpacity>
         </ThemedView>
